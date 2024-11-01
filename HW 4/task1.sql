@@ -19,5 +19,5 @@ CREATE TABLE petEvent (
   eventtype varchar(15),
   remark varchar(255),
   PRIMARY KEY (petname,eventdate,eventype),
-  FOREIGN KEY (petname) REFERENCES petPet(petname)
+  FOREIGN KEY (petname) REFERENCES petPet(petname) ON DELETE CASCADE
 );
